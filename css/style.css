@@ -1,0 +1,589 @@
+@charset "UTF-8";
+html {
+  font-size: 100%;
+}
+body {
+  background-color: #141414;
+  color: #fff;
+  font-size: 0.875rem;
+  font-family: "メイリオ";
+}
+img {
+  max-width: 100%;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.fadeUpTrigger {
+  opacity: 0;
+}
+.section-title {
+  font-family: kozuka-mincho-pr6n, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #FF9B17;
+}
+.section-sub-title {
+  font-size: 1rem;
+  font-family: "Gabriola";
+  font-weight: normal;
+  line-height: 8px;
+}
+.btn {
+  width: 150px;
+  margin: 0 auto;
+  font-size: 0.8125rem;
+  text-align: center;
+  font-family: "メイリオ";
+  font-weight: normal;
+  line-height: 20px;
+  border: 1px solid #FF9B17;
+}
+.btn a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+.btn a:hover {
+  color: #141414;
+  background-color: rgb(252, 167, 56);
+  transition: all 0.7s;
+}
+/* ---------- header ---------- */
+.header nav {
+  display: flex;
+}
+.logo-img {
+  max-width: 90px;
+  height: auto;
+  padding: 10px;
+  margin-left: 10px;
+  line-height: 0;
+}
+.nav {
+  width: 100%;
+  height: 80px;
+}
+.nav-ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin-right: 20px;
+}
+.nav-ul li {
+  margin-left: 10px;
+  padding: 35px 10px;
+}
+.nav-ul a {
+  color: #fff;
+  text-decoration: none;
+}
+/* ---------- main ---------- */
+.mainvisual {
+  background-image: url(../img/mainvisual1.png);
+  background-size: cover;
+  width: 100%;
+  max-width: 1920px;
+  height: 730px;
+}
+.main-container {
+  text-align: center;
+  padding-top: 20px;
+  font-family: kozuka-mincho-pr6n, serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.catch-copy {
+  font-size: 2rem;
+  line-height: 1.3;
+  padding: 20px;
+  animation-name: fade;
+  animation-duration: 4.5s;
+}
+@keyframes fade{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.br-sp {
+  display: none;
+}
+.main-title {
+  font-size: 2.5rem;
+  margin: 20px 0 0 0;
+}
+.sub-title {
+  font-size: 1.2rem;
+  line-height: 0;
+  font-family: "Gabriola";
+  font-weight: normal;
+}
+.mainvisual p {
+  font-size: 1.9rem;
+  font-family: "Gabriola";
+  font-weight: normal;
+  color: #DFE955;
+  padding: 15px;
+}
+/* ---------- notice ---------- */
+.notice {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 1.25rem;
+}
+/* ---------- news ---------- */
+.news-container {
+  padding: 15px 30px;
+  border: 1px solid #1368FB;
+  margin-bottom: 80px;
+}
+.news {
+  text-align: center;
+}
+.news-title {
+  font-family: kozuka-mincho-pr6n, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 0;
+}
+.news p {
+  margin: 20px;
+}
+.text-title {
+  color: red;
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+.news-text {
+  line-height: 30px;
+  padding: 10px;
+  margin-left: 10px;
+}
+/* ---------- program & water viewing 共通 ---------- */
+.wrapper {
+  font-family: kozuka-mincho-pr6n, serif;
+  font-style: normal;
+  font-weight: bold;
+  border-bottom: 1px solid #434343;
+  display: flex;
+  padding: 50px 30px 50px 30px;
+  justify-content: space-between;
+}
+.wrapper-img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+.fadeLeft {
+  animation-name: fadeLeftAnime;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes fadeLeftAnime {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.fadeRight {
+  animation-name: fadeRightAnime;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes fadeRightAnime {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 1.8s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.wrapper-text {
+  margin: 0 auto;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+.content-title {
+  padding: 10px;
+}
+.content-text {
+  margin: 0 auto;
+  max-width: 390px;
+  width: 100%;
+  padding: 30px;
+  line-height: 27px;
+  text-align: left;
+  flex-wrap: wrap;
+  font-family: "メイリオ";
+  font-weight: normal;
+}
+/* ---------- access ---------- */
+.access {
+  margin: 20px 0 10px 0;
+  padding: 50px 30px 50px 30px;
+  margin: 0 auto;
+  text-align: center;
+  flex-wrap: wrap;
+  line-height: 30px;
+  }
+.access-title {
+  text-decoration: underline;
+  margin-top: 20px;
+}
+.access-text{
+  padding: 30px;
+  margin: 0 auto;
+  text-align: center;
+}
+.access .btn {
+  margin-bottom: 30px;
+}
+/* ---------- contact ---------- */
+.contact {
+  display: flex;
+  margin: 0 auto;
+  padding: 25px;
+  text-align: center;
+  max-width: 1000px;
+  width: 100%;
+}
+.contact-wrapper {
+  width: 500px;
+  padding: 30px;
+}
+.contact-text{
+  padding: 30px;
+  line-height: 30px;
+  text-align: left;
+  margin-left: 20px;
+}
+.contact-text-tel {
+  font-size: 1.2rem;
+  margin: 0 0 20px 20px;
+  padding: 0 30px;
+  text-align: left;
+}
+.contact-img {
+  width: 500px;
+  padding: 30px;
+}
+.map {
+  max-width: 800px;
+  width: 100%;
+}
+/* ---------- footer ---------- */
+.footer {
+  font-size: 0.75rem;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+.footer img {
+  margin-left: 10px;
+  width: 20px;
+  height: auto;
+}
+/* ---------- responsive (max-width:1024px) ----------- */
+@media screen and (max-width:1024px) {
+  body {
+   font-size: 0.8125rem;
+  }
+  /* ---------- header ---------- */
+  .logo-img {
+    max-width: 80px;
+    height: auto;
+    line-height: 0;
+  }
+  /* ---------- mainvisual ---------- */
+  .mainvisual {
+    background-image: url(../img/mainvisual1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    padding-top: 10px;
+  }
+  .catch-copy {
+    font-size: 1.4rem;
+    padding: 10px;
+    line-height: 1.3;
+  }
+  .main-container {
+    padding: 0;
+  }
+  .main-title {
+    font-size: 1.7rem;
+    margin: 10px 0 0 0;
+  }
+  .sub-title {
+    font-size: 0.9875rem;
+    line-height: 10px;
+  }
+  .mainvisual p {
+    font-size: 1.2rem;
+    line-height: 15px;
+    margin-top: 5px;
+  }
+  /* ---------- notice ---------- */
+  .notice {
+    margin: 0 auto;
+    padding: 30px 0;
+    font-size: 1.1rem;
+  }
+  /* ---------- news ---------- */
+  .news-container {
+    margin: 0 30px 30px 30px;
+    padding: 20px;
+  }
+  .text-title {
+   font-size: 1.1rem;
+  }
+  .news-text {
+    padding: 20px 10px;
+  }
+  .news-text li {
+    line-height: 1.9;
+  }
+  /* ---------- program & water viewing 共通 ---------- */
+  .wrapper {
+    padding: 20px;
+    margin: 20px;
+  }
+  .wrapper-img {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrapper-text {
+    text-align: center;
+  }
+  .content-text {
+    padding: 20px;
+    line-height: 1.8;
+  }
+  /* ---------- access ---------- */
+  .access {
+    padding: 20px;
+  }
+  .access-text {
+    padding: 20px;
+  }
+  /* ---------- contact ---------- */
+  .contact {
+    margin: 0 auto;
+  }
+  .contact-wrapper {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .contact-text {
+    margin-top: 20px;
+    padding: 10px;
+    line-height: 1.7;
+    font-size: 0.8rem;
+  }
+  .contact-text-tel {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  .contact-img {
+    max-width: 1024px;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* ---------- footer ---------- */
+  .footer {
+    padding: 20px;
+  }
+  }
+/* ---------- responsive (max-width:599px) ----------- */
+@media screen and (max-width:600px) {
+body {
+  font-size: 0.75rem;
+}
+/* ---------- header ---------- */
+.logo-img {
+  margin: 10px;
+  padding: 0;
+}
+.nav-ul {
+  display: block;
+  width: 599px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  float: right;
+}
+.nav-ul li {
+  font-size: 0.6875rem;
+  padding: 0;
+  margin: 10px 7px;
+  list-style-type: disc;
+  float: right;
+  writing-mode: vertical-rl;
+} 
+/* ---------- mainvisual ---------- */
+.mainvisual {
+  background-image: url(../img/mainvisual1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 330px;
+  padding-top: -10px;
+}
+.catch-copy {
+  font-size: 0.9rem;
+  padding: 0 10px;
+  line-height: 1.3;
+}
+.br-sp {
+  display: block;
+}
+.main-container {
+  padding-top: 10px;
+}
+.main-title {
+  font-size: 1rem;
+  margin: 10px 0 0 0;
+}
+.sub-title {
+  font-size: 0.6rem;
+  line-height: 5px;
+}
+.mainvisual p {
+  font-size: 0.85rem;
+  line-height: 15px;
+  margin-top: 15px;
+}
+/* ---------- notice ---------- */
+.notice {
+margin: 0 auto;
+width: 300px;
+padding: 20px;
+}
+.notice p {
+  font-size: 0.85rem;
+}
+/* ---------- news ---------- */
+.news-container {
+  margin: 20px;
+  padding: 20px;
+}
+.text-title {
+  font-size: 0.9rem;
+}
+.news-text {
+  padding: 20px 10px;
+}
+.news-text li {
+  line-height: 1.7;
+}
+/* ---------- program & water viewing 共通 ---------- */
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px;
+}
+.box-1 {
+  order: 2;
+  margin: 0 auto;
+}
+.box-2 {
+  order: 1;
+  margin: 0 auto;
+}
+.wrapper-img {
+  width: 100%;
+  margin: 0 auto;
+}
+.wrapper-img img {
+  margin-bottom: 20px;
+}
+.content-text {
+  padding: 30px;
+}
+/* ---------- access ---------- */
+.access {
+  padding: 20px;
+}
+.access-text {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+}
+/* ---------- contact ---------- */
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.contact-wrapper {
+  max-width: 599px;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+.contact-text {
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  line-height: 1.7;
+}
+.contact-text-tel {
+  font-size: 1rem;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+.contact-img {
+  max-width: 599px;
+  width: 100%;
+  padding: 0;
+}
+/* ---------- footer ---------- */
+.footer {
+  padding: 10px;
+}
+}
